@@ -16,3 +16,8 @@ autoflake==2.2.0
 
 # For saving converted data.
 ruamel.yaml==0.17.32
+
+# for API
+requests==2.31.0
+
+pandas==2.0.3
