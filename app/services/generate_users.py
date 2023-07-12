@@ -30,7 +30,7 @@ def generate_user() -> User:
     )
 
 
-def generate_users(amount: int) -> Iterator[User]:
+def generate_users(amount: int = 100) -> Iterator[User]:
     #logger = get_core_logger()
 
     #logger.debug(msg="generate_users.start")
