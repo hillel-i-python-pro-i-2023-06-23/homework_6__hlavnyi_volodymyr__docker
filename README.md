@@ -1,11 +1,11 @@
-# Homework 6 App for Docker
+# Homework 6 (Docker)
 
 ---
-#![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/shared__docker__example_2023_06_23/actions/workflows/main-workflow.yml/badge.svg)
-![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/homework_5__hlavnyi_volodymyr__docker/actions/workflows/main-workflow.yml/badge.svg)
+![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/shared__docker__example_2023_06_23/actions/workflows/main-workflow.yml/badge.svg)
+
 ## 🏠 Homework
 
-Homework #5 related actions.
+Homework related actions.
 
 ### ▶️ Run
 
@@ -72,4 +72,3 @@ Purge all data related with services
 ```shell
 make d-purge
 ```
-
