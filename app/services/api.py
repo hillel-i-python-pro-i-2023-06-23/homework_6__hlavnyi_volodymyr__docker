@@ -19,7 +19,7 @@ def print_info_from_api():
     print_info_from_api_count_astro()
     print_list_austronauts()
 
-def print_info_from_api_count_astro():
+def print_info_from_api_count_astro(url):
     url = 'http://api.open-notify.org/astros.json'
     data = get_info_from_api(url)
     print(f'Now we have {get_count_austronauts(data=data)} austronauts in space')
