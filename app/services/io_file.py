@@ -10,3 +10,7 @@ def get_path_if_file_exists(name_of_file:str):
         return check_txt_file
     else:
         raise FileNotFoundError(f"File not found: {check_txt_file.as_uri()}")
+
+def print_file_to_screen(link_2_file):
+    with open(link_2_file, 'r') as f:
+        print(f.read())
