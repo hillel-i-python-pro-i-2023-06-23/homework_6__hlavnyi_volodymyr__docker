@@ -9,6 +9,7 @@ from app.services.google import (
 
 
 def main():
+    # ----------------
     # 1
     # Read file from project
     # read in folder files_input if present file .gitkeep
@@ -18,10 +19,12 @@ def main():
     # output
     print_file_to_screen(link2file_output)
 
+    # ----------------
     # 2
     users = generate_users()  # default 100 users generated
     print_users(users, True)  # True print with first column Index
 
+    # ----------------
     # 3
     url1 = "http://api.open-notify.org/astros.json"
     # get data
@@ -29,6 +32,7 @@ def main():
     # output
     print_info_from_api(data)
 
+    # ----------------
     # 4
     url2 = "https://drive.google.com/uc?export=download&id=13nk_FYpcayUck2Ctrela5Tjt9JQbjznt"
     # get data
