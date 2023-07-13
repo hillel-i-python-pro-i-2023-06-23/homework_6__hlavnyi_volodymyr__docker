@@ -1,4 +1,3 @@
-import os
 from app.services.check_file_exists import get_path_if_file_exists
 
 def print_file(name_of_file:str):
