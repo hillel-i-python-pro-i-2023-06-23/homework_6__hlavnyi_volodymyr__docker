@@ -3,7 +3,6 @@ from collections.abc import Iterator
 
 from app.services.faker_instance import faker
 
-
 class User(NamedTuple):
     username: str
     email: str
@@ -31,15 +30,10 @@ def generate_user() -> User:
 
 
 def generate_users(amount: int = 100) -> Iterator[User]:
-    #logger = get_core_logger()
-
-    #logger.debug(msg="generate_users.start")
 
     for index in range(1, amount + 1):
-        #logger.debug(f"generate_users.iteration.{index}/{amount}")
         yield generate_user()
 
-    #logger.debug("generate_users.end")
 
 def print_users(users, is_print_index=False):
     prepare_users = (user for user in users)

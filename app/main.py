@@ -12,7 +12,7 @@ def main():
     print_file('sample3.txt')
 
     #2
-    users = generate_users(100)
+    users = generate_users()
     print_users(users, True) #True print with first column Index
 
     #3
@@ -20,5 +20,6 @@ def main():
 
     #4
     print_info_from_google_sheets()
+
 
 
