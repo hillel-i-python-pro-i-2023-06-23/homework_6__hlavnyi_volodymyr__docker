@@ -30,7 +30,6 @@ def generate_user() -> User:
 
 
 def generate_users(amount: int = 100) -> Iterator[User]:
-
     for index in range(1, amount + 1):
         yield generate_user()
 

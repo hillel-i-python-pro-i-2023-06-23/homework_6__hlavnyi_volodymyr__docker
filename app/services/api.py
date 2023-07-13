@@ -15,17 +15,13 @@ def get_list_austronauts(data):
         name_astro = a['name']
         list_astro.append( f'{craft} {name_astro}')
     return list_astro
-def print_info_from_api():
-    print_info_from_api_count_astro()
-    print_list_austronauts()
+def print_info_from_api(data):
+    print_info_from_api_count_astro(data)
+    print_list_austronauts(data)
 
-def print_info_from_api_count_astro(url):
-    url = 'http://api.open-notify.org/astros.json'
-    data = get_info_from_api(url)
-    print(f'Now we have {get_count_austronauts(data=data)} austronauts in space')
+def print_info_from_api_count_astro(data):
+    print(f'Now we have {get_count_austronauts(data)} austronauts in space')
 
-def print_list_austronauts():
-    url = 'http://api.open-notify.org/astros.json'
-    data = get_info_from_api(url)
-    for count,astro in enumerate(get_list_austronauts(data=data)):
+def print_list_austronauts(data):
+    for count,astro in enumerate(get_list_austronauts(data)):
         print(count+1, astro)
