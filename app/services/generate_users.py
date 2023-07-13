@@ -3,6 +3,7 @@ from collections.abc import Iterator
 
 from app.services.faker_instance import faker
 
+
 class User(NamedTuple):
     username: str
     email: str
@@ -35,8 +36,8 @@ def generate_users(amount: int = 100) -> Iterator[User]:
 
 
 def print_users(users, is_print_index=False):
-    for index4print,user in enumerate(users):
-        string4print = f'Name: {user.username}, email:{user.email}'
+    for index4print, user in enumerate(users):
+        string4print = f"Name: {user.username}, email:{user.email}"
         if is_print_index:
-            string4print = f'{index4print} Name: {user.username}, email:{user.email}'
+            string4print = f"{index4print} Name: {user.username}, email:{user.email}"
         print(string4print)
