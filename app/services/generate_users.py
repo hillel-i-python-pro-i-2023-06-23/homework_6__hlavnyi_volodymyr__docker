@@ -31,22 +31,13 @@ def generate_user() -> User:
 
 
 def generate_users(amount: int = 100) -> Iterator[User]:
-    #logger = get_core_logger()
-
-    #logger.debug(msg="generate_users.start")
-
     for index in range(1, amount + 1):
-        #logger.debug(f"generate_users.iteration.{index}/{amount}")
         yield generate_user()
 
-    #logger.debug("generate_users.end")
 
 def print_users(users, is_print_index=False):
-    prepare_users = (user for user in users)
-    index4print = 1
-    for user in prepare_users:
-        string4print = f'Name: {user.username}, email:{user.email}'
+    for index4print, user in enumerate(users):
+        string4print = f"Name: {user.username}, email:{user.email}"
         if is_print_index:
-            string4print = f'{index4print} Name: {user.username}, email:{user.email}'
+            string4print = f"{index4print} Name: {user.username}, email:{user.email}"
         print(string4print)
-        index4print += 1
