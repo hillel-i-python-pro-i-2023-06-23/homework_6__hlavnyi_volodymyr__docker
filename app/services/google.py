@@ -5,12 +5,12 @@ from app.config import FILES_OUTPUT_DIR
 def get_google_sheets_pd_data(url):
     csv_file_path = FILES_OUTPUT_DIR.joinpath("gtable.csv")
     df = pd.io.parsers.read_csv(url)
-    # wtite for testing purpose
+    # write for testing purpose
     df.to_csv(csv_file_path)
     return df
 
 
-def get_from_pd_hight(df):
+def get_from_pd_height(df):
     height_mean = df[["Height(Inches)"]].mean()
     return height_mean.values[0]
 
@@ -29,7 +29,7 @@ def convert_pounds_in_kg(pounds):
 
 
 def print_info_from_google_sheets_height(df):
-    print(f"Average hight is {convert_inches_in_cm(get_from_pd_hight(df))}")
+    print(f"Average height is {convert_inches_in_cm(get_from_pd_height(df))}")
 
 
 def print_info_from_google_sheets_weight(df):
